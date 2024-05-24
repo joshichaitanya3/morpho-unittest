@@ -33,7 +33,7 @@ class UnitTest {
             hasfixture = true
         }
 
-        for (method in commonMethods+assertMethods) {
+        for (method in commonMethods.join(assertMethods)) {
             listOfMethods.remove(method)
         }
         // now we are left with just the test methods
